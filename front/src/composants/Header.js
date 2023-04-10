@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import {React, useContext} from "react";
+import { React, useContext } from "react";
 import Style from "./Header.module.css";
 import { useNavigate } from "react-router-dom";
 import Logo from "../Logo.png";
@@ -11,7 +11,7 @@ export default function Header() {
     const redirect = useNavigate()
     const handleLogout = async () => {
         await axios.get("https://quizlybydjibril.herokuapp.com/logout")
-            .then(() => { LogState.logOut(), localStorage.clear() })
+            .then(() => { LogState.logOut(), localStorage.clear(), window.location.reload() })
             .then(() => { redirect("/") })
     }
 
