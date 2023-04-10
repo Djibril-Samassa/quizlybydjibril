@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Font";
+  src: url("../public/OpenSans/OpenSans-Regular.ttf");
+}
+
+* {
+  font-family: "Font";
+}
+
+.App {
+  min-height: 100vh;
+  max-height: fit-content;
+  background-color: #efcb68;
+  padding: 10px 0px;
+}
+
+.yellow {
+  background-color: #efcb68;
+}
+
+.button {
+  color: black;
+  text-decoration: none;
+  padding: 9px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: scale(1);
+  transition-duration: 300ms;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.image {
+  max-width: 400px;
+}
+
+.technos {
+  margin-right: 10em;
+}
+
+.edit {
+  cursor: pointer;
+  padding: 9px 15px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page {
+  padding: 0em 5em;
+  min-height: 100vh;
+}
+
+
+.deleteAccount {
+  color: #f1f1f1;
+  background-color: rgb(253, 57, 57);
+}
+
+.cancel{  
+  background-color: #f1f1f1;
+}

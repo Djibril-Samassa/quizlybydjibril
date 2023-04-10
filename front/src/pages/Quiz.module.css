@@ -1,0 +1,32 @@
+.container {
+    padding: 2em 5em;
+}
+
+.option {
+    display: flex;
+}
+
+.option>h2 {
+    margin: 0px 10px;
+}
+
+.selected {
+    background-color: #f1f1f1
+}
+
+@media screen and (max-width: 1200px) {
+    .option {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 0em 2em;
+    }
+
+    .option{
+        flex-direction: column;
+        text-align: center;
+    }
+}
